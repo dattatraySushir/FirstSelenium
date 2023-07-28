@@ -44,6 +44,7 @@ namespace FirstSelenium
         [TestMethod]
         public void SelectedProperty()
             {
+
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://demo.actitime.com/login.do";
             driver.FindElement(By.Id("keepLoggedInCheckBox")).Click();

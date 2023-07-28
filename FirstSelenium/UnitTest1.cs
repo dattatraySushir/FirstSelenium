@@ -7,11 +7,11 @@ using System.Runtime.Remoting.Metadata.W3cXsd2001;
 namespace FirstSelenium
 {
     [TestClass]
-    [TestCategory("PracticeFirst")]
+    [TestCategory("Practice")]
     public class UnitTest1
     {
         [TestMethod]
-       [TestCategory("PracticeFirst1")]
+        [TestCategory("practise")]
         public void TestMethod1()
         {
             IWebDriver driver = new ChromeDriver();

@@ -59,6 +59,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenericLibraries\Baseclass.cs" />
+    <Compile Include="GenericLibraries\WebDriverUtility.cs" />
+    <Compile Include="ObjectRepository\LoginPage.cs" />
+    <Compile Include="Program\Fiveprograms.cs" />
+    <Compile Include="TestScripts\LoginTest.cs" />
     <Compile Include="WebElementsMethods.cs" />
     <Compile Include="NavigationMethods.cs" />
     <Compile Include="WebDriverMethods.cs" />
@@ -67,6 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestData\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

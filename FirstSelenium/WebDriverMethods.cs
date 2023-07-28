@@ -26,6 +26,9 @@ namespace FirstSelenium
             driver.Navigate().GoToUrl("https://www.google.com/");
 
         }
+
+
+
         [TestMethod]
         public void GetTittleProperty()
         {
@@ -73,9 +76,14 @@ namespace FirstSelenium
             IWebElement element=driver.FindElement(By.XPath("//a[text()='Images']"));
             Actions actions =new  Actions(driver);
             actions.MoveToElement(element).ContextClick().Build().Perform();
+
+
             KeyboardSimulator keybordSimulator = new KeyboardSimulator(new InputSimulator());
             keybordSimulator.KeyPress(VirtualKeyCode.DOWN);
             keybordSimulator.KeyPress(VirtualKeyCode.RETURN);
+
+
+
             ReadOnlyCollection<string> windowId=driver.WindowHandles;
             foreach (string id in windowId)
             {

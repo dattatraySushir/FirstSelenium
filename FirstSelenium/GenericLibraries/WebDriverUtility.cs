@@ -32,6 +32,11 @@ namespace FirstSelenium.GenericLibraries
             wdw.Until(ExpectedConditions.UrlContains(partialpageUrl));
 
         }
+        public void WaitForElementVisible(IWebDriver driver, By locator)
+        {
+            WebDriverWait wdv= new WebDriverWait(driver,TimeSpan.FromSeconds(20));
+            wdv.Until(ExpectedConditions.ElementIsVisible(locator));
+        }
 
     }
 }

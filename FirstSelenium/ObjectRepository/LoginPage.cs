@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace FirstSelenium.ObjectRepository
 {
+    [TestCategory("smoke")]
     public class LoginPage
     {
         [FindsBy(How = How.Id, Using = "username")]
@@ -27,14 +29,12 @@ namespace FirstSelenium.ObjectRepository
             PageFactory.InitElements(driver, this);
         }
 
-        public void FillUsername()
+        public void login(String un, string pwd)
         {
-            username.SendKeys("admin");
+            username.SendKeys(un);
+            password.SendKeys(pwd);
         }
-        public void FillPassword()
-        {
-            password.SendKeys("manager");
-        }
+       
         public void ClickCheckbox()
         {
             checkBox.Click();

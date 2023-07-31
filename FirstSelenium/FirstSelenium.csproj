@@ -39,12 +39,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bytescout.Spreadsheet, Version=4.7.1.2054, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bytescout.Spreadsheet.4.7.1.2054\lib\net40\Bytescout.Spreadsheet.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -59,11 +63,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClassTIandTC.cs" />
+    <Compile Include="DataDrivenTest.cs" />
+    <Compile Include="Baseclass1.cs" />
     <Compile Include="GenericLibraries\Baseclass.cs" />
     <Compile Include="GenericLibraries\WebDriverUtility.cs" />
+    <Compile Include="ObjectRepository\HomePage.cs" />
     <Compile Include="ObjectRepository\LoginPage.cs" />
+    <Compile Include="ParallelExecution.cs" />
+    <Compile Include="ProgramPart.cs" />
     <Compile Include="Program\Fiveprograms.cs" />
+    <Compile Include="TestClass1.cs" />
+    <Compile Include="TestScripts\FetchDataFromExcel.cs" />
     <Compile Include="TestScripts\LoginTest.cs" />
+    <Compile Include="TestScripts\TaskPage.cs" />
     <Compile Include="WebElementsMethods.cs" />
     <Compile Include="NavigationMethods.cs" />
     <Compile Include="WebDriverMethods.cs" />
@@ -72,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Resources\TestData.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestData\" />

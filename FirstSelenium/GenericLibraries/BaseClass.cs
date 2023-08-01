@@ -23,13 +23,13 @@ namespace FirstSelenium.GenericLibraries
             driver.Url = "https://demo.actitime.com/login.do";
             WebDriverUtility webDriverUtility = new WebDriverUtility();
             webDriverUtility.WaitForElementImplicitly(driver);
-            FetchDataFromExcel excelfetch = new FetchDataFromExcel();
+            /*FetchDataFromExcel excelfetch = new FetchDataFromExcel();
             string username = excelfetch.ExcelDataFectch("Acti", 0, 0);
             string password = excelfetch.ExcelDataFectch("Acti", 1, 0);
             LoginPage loginpage = new LoginPage(driver);
             loginpage.login(username, password);
             loginpage.ClickCheckbox();
-            loginpage.ClickLoginButton();
+            loginpage.ClickLoginButton();*/
         }
 
 

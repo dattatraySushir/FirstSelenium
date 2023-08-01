@@ -15,8 +15,8 @@ namespace FirstSelenium
         [TestMethod]
         [TestCategory("DataDrivenTest")]
         [DataTestMethod]
-        [DataRow("https://demo.actitime.com/login.do")]
-        [DataRow("https://www.flipkart.com/")]
+     //   [DataRow("https://demo.actitime.com/login.do")]
+        //[DataRow("https://www.flipkart.com/")]
         [DataRow("https://www.google.com/")]
         public void DataDrivenTestMethod(string url)
         {

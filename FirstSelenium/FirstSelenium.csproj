@@ -72,6 +72,7 @@
     <Compile Include="ObjectRepository\LoginPage.cs" />
     <Compile Include="ParallelExecution.cs" />
     <Compile Include="ProgramPart.cs" />
+    <Compile Include="Program\31jul2023.cs" />
     <Compile Include="Program\Fiveprograms.cs" />
     <Compile Include="TestClass1.cs" />
     <Compile Include="TestScripts\FetchDataFromExcel.cs" />

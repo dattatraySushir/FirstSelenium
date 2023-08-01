@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-[assembly: Parallelize(Workers =7,Scope =ExecutionScope.MethodLevel)]
+[assembly: Parallelize(Workers =2,Scope =ExecutionScope.MethodLevel)]
 namespace FirstSelenium
 {
     [TestClass]
@@ -52,6 +52,7 @@ namespace FirstSelenium
             Thread.Sleep(3000);
         }
         [TestMethod]
+       // [DoNotParallelize]
         public void ParallelExecutionTest7()
         {
             Console.WriteLine($"Execution no 7");

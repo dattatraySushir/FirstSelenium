@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FirstSelenium.Program
@@ -56,6 +57,7 @@ namespace FirstSelenium.Program
             }
             sum = sum + tsum;
             Console.WriteLine(sum);
+           // Thread.Sleep(3000);
         }
         [TestMethod]
         public void Program3()
@@ -88,6 +90,7 @@ namespace FirstSelenium.Program
             {
                 Console.WriteLine("The string is not a palindrome");
             }
+           // Thread.Sleep (3000);
         }
         [TestMethod]
         public void Program5()

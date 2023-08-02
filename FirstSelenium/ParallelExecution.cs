@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-[assembly: Parallelize(Workers =2,Scope =ExecutionScope.MethodLevel)]
+//[assembly: Parallelize(Workers =2,Scope =ExecutionScope.MethodLevel)]
 namespace FirstSelenium
 {
     [TestClass]

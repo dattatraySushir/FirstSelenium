@@ -83,6 +83,7 @@
     <Compile Include="TestScripts\FetchDataFromExcel.cs" />
     <Compile Include="TestScripts\LoginTest.cs" />
     <Compile Include="TestScripts\TaskPage.cs" />
+    <Compile Include="TestScripts\Today\PriorityyClasses.cs" />
     <Compile Include="WebElementsMethods.cs" />
     <Compile Include="NavigationMethods.cs" />
     <Compile Include="WebDriverMethods.cs" />

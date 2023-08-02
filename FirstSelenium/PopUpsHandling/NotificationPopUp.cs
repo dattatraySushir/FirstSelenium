@@ -36,7 +36,11 @@ namespace FirstSelenium.PopUpsHandling
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            driver.Url = "http://demo.guru99.com/popup.php";
+            driver.Url = "https://the-internet.herokuapp.com/";
+            driver.FindElement(By.XPath("//a[text()='JavaScript Alerts']")).Click();
+            driver.FindElement(By.XPath("//button[text()='Click for JS Alert']")).Click();
+            IAlert alt = driver.SwitchTo().Alert();
+            alt.Accept();
         }
     }
 }

@@ -70,6 +70,7 @@
     <Compile Include="Attributes\PrioritiesClass.cs" />
     <Compile Include="Attributes\TimeoutAttribute.cs" />
     <Compile Include="BaseClassTIandTC.cs" />
+    <Compile Include="TakeScreenShot.cs" />
     <Compile Include="TestContextClass.cs" />
     <Compile Include="DataDrivenTest.cs" />
     <Compile Include="Baseclass1.cs" />

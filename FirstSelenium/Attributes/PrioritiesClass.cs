@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace FirstSelenium.Attributes
 {
     [TestClass]
-    [TestCategory("Priority")]
+    [TestCategory("Smoke")]
     public  class PrioritiesClass
     {
         [TestMethod]
@@ -18,7 +18,7 @@ namespace FirstSelenium.Attributes
             Console.WriteLine("The method 1 is executed from priority class");
         }
         [TestMethod]
-        [Priority(0)]
+        [Priority(0), TestCategory("Smoke")]
         public void Method2() 
         {
             Console.WriteLine("The method 2 is executed form the priority class"); 

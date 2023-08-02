@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace FirstSelenium.TestScripts.Today
 {
     [TestClass]
-    [TestCategory("A")]
+    [TestCategory("Regression")]
     public class PriorityyClasses
     {
         [TestMethod]

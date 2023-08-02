@@ -49,10 +49,21 @@ namespace FirstSelenium.PopUpsHandling
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            driver.Url = "https://the-internet.herokuapp.com/";
-            driver.FindElement(By.XPath("//a[text()='Basic Auth']")).Click();
+            driver.Url = "https://the-internet.herokuapp.com/digest_auth";
+           // driver.FindElement(By.XPath("//a[text()='Basic Auth']")).Click();
             IAlert alt =driver.SwitchTo().Alert();
-            alt.SetAuthenticationCredentials("admin","admin");
+            //we use this method to send the credentials to the alert pop up.
+          //  alt.SetAuthenticationCredentials("admin","admin");
+        }
+        [TestMethod] 
+        public void AuthenticationPopUp1()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+
+            //providing the login credentials in the url only we can handle the authentication popup.
+            driver.Url = "https://admin:admin@the-internet.herokuapp.com/basic_auth";
         }
     }
 }

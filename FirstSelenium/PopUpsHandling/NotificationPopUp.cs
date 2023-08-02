@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 namespace FirstSelenium.PopUpsHandling
 {
     [TestClass]
+    [TestCategory("PopUp HAndling")]
     public class NotificationPopUp
     {
         [TestMethod]
@@ -41,6 +42,17 @@ namespace FirstSelenium.PopUpsHandling
             driver.FindElement(By.XPath("//button[text()='Click for JS Alert']")).Click();
             IAlert alt = driver.SwitchTo().Alert();
             alt.Accept();
+        }
+        [TestMethod]
+        public void AuthenticationPopUp()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            driver.Url = "https://the-internet.herokuapp.com/";
+            driver.FindElement(By.XPath("//a[text()='Basic Auth']")).Click();
+            IAlert alt =driver.SwitchTo().Alert();
+            alt.SetAuthenticationCredentials("admin","admin");
         }
     }
 }

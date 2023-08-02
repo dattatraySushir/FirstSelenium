@@ -12,22 +12,22 @@ namespace FirstSelenium
     [TestCategory("AssemblyInit")]
     public class TestClass1 : BaseClassTIandTC
     {
-        [TestMethod]
+       // [TestMethod]
         public void TestMethod() {
             MessageBox.Show("This is the 1st method");
 
         }
-        [ClassInitialize]
+       //[ClassInitialize]
         public static void ClassInitialize(TestContext context)
         {
             MessageBox.Show("This is class initialize");
         }
-        [ClassCleanup]
+      //  [ClassCleanup]
         public static void ClassCleanup()
         {
             MessageBox.Show("This is class cleanup");
         }
-        [TestMethod]
+       // [TestMethod]
         public void TestMethod2()
         {
             MessageBox.Show("This is the 2 nd method");

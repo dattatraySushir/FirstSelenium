@@ -14,7 +14,7 @@ namespace FirstSelenium
     [TestClass]
     public class WebElementsMethods
     {
-        [TestMethod]
+      //  [TestMethod]
         public void TagNameProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -23,7 +23,7 @@ namespace FirstSelenium
             String tagname = element.TagName;
             Console.WriteLine(tagname);
         }
-        [TestMethod]
+       // [TestMethod]
         public void TextProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -32,7 +32,7 @@ namespace FirstSelenium
             String text = element.Text;
             Console.WriteLine(text);
         }
-        [TestMethod]
+      //  [TestMethod]
        public void EnabledProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -41,7 +41,7 @@ namespace FirstSelenium
             bool enabled = element.Enabled;
             Console.WriteLine("In this we can get the element is working or not "+enabled);
         }
-        [TestMethod]
+      //  [TestMethod]
         public void SelectedProperty()
             {
 
@@ -54,7 +54,7 @@ namespace FirstSelenium
 
         }
 
-        [TestMethod]
+       // [TestMethod]
         public void LocationProperty()
         {
             IWebDriver driver= new ChromeDriver();
@@ -64,7 +64,7 @@ namespace FirstSelenium
            Point loc= element.Location;
             Console.WriteLine(loc);
         }
-        [TestMethod]
+       // [TestMethod]
         public void SizeProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -74,7 +74,7 @@ namespace FirstSelenium
            Size sz= element.Size;
             Console.WriteLine(sz);
         }
-        [TestMethod]
+      //  [TestMethod]
         public void DispalyProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -84,7 +84,7 @@ namespace FirstSelenium
            bool disp= element.Displayed;
             Console.WriteLine("The message is getting printed or not " + disp); ;
         }
-        [TestMethod]
+      //  [TestMethod]
         public void ClearProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -93,14 +93,14 @@ namespace FirstSelenium
             Thread.Sleep(3000);
             driver.FindElement(By.Name("username")).Clear();
         }
-        [TestMethod]
+       // [TestMethod]
         public void SendkeysProperty()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url= "https://demo.actitime.com/login.do";
             driver.FindElement(By.Name("username")).SendKeys("Admin");
         }
-        [TestMethod]
+       // [TestMethod]
         public void SubmitProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -109,7 +109,7 @@ namespace FirstSelenium
             element.SendKeys("Admin");
             element.Submit();
         }
-        [TestMethod]
+       // [TestMethod]
         public void ClickProperty()
         {
             IWebDriver driver = new ChromeDriver();

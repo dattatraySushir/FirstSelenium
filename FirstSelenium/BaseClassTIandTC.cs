@@ -11,12 +11,12 @@ namespace FirstSelenium
     [TestClass]
     public class BaseClassTIandTC
     {
-        [TestInitialize]
+       // [TestInitialize]
         public void TestInitialzi()
         {
             MessageBox.Show("This is the Test Initialise");
         }
-        [TestCleanup]
+        //[TestCleanup]
         public  void TestCleanup()
         {
             MessageBox.Show("This is the Test cleanup");

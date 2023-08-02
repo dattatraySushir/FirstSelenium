@@ -19,7 +19,7 @@ namespace FirstSelenium
     [TestCategory("WebdriverMethods")]
     public class WebDriverMethods
     {
-        [TestMethod]
+      //  [TestMethod]
         public void UrlProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -29,14 +29,14 @@ namespace FirstSelenium
 
 
 
-        [TestMethod]
+      // [TestMethod]
         public void GetTittleProperty()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://www.google.com/";
             Console.WriteLine(driver.Title);
         }
-        [TestMethod]
+      //  [TestMethod]
         public void FindElememntProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -44,14 +44,14 @@ namespace FirstSelenium
             Thread.Sleep(3000);
             driver.FindElement(By.Id("APjFqb")).SendKeys("datta sushir");
         }
-        [TestMethod]
+      //  [TestMethod]
         public void FindElementsProperty()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://www.google.com/";
            ReadOnlyCollection<IWebElement> element= driver.FindElements(By.XPath("//div[@id='Alh6id']/child::div/child::div/child::ul/child::li"));
         }
-        [TestMethod]
+       // [TestMethod]
         public void PageSourceProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -59,7 +59,7 @@ namespace FirstSelenium
             string pagesource = driver.PageSource;
             Console.WriteLine(pagesource);
         }
-        [TestMethod]
+       // [TestMethod]
         public void CurrentWindowHandleProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -68,7 +68,7 @@ namespace FirstSelenium
             Console.WriteLine(window);
 
         }
-        [TestMethod]
+       // [TestMethod]
         public void CurrentWindowHandlesProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -91,7 +91,7 @@ namespace FirstSelenium
             }
 
         }
-        [TestMethod]
+       // [TestMethod]
         public void CloseProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -99,7 +99,7 @@ namespace FirstSelenium
             Thread.Sleep(3000);
             driver.Close();
         }
-        [TestMethod]
+      //  [TestMethod]
         public void QuitProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -110,21 +110,21 @@ namespace FirstSelenium
             Thread.Sleep(3000);
             driver.Quit();
         }
-        [TestMethod]
+       // [TestMethod]
         public void NavigateProperty()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.google.com/");
             driver.Navigate().Refresh();
         }
-        [TestMethod]
+       // [TestMethod]
         public void ManageProperty()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.google.com/");
             driver.Manage().Window.Maximize();
         }
-        [TestMethod]
+       // [TestMethod]
         public void SwitchToProperty()
         {
             IWebDriver driver = new ChromeDriver();

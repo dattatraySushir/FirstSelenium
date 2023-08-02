@@ -75,6 +75,7 @@
     <Compile Include="ObjectRepository\HomePage.cs" />
     <Compile Include="ObjectRepository\LoginPage.cs" />
     <Compile Include="ParallelExecution.cs" />
+    <Compile Include="PopUpsHandling\NotificationPopUp.cs" />
     <Compile Include="ProgramPart.cs" />
     <Compile Include="Program\31jul2023.cs" />
     <Compile Include="Program\Fiveprograms.cs" />

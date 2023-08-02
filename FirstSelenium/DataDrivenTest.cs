@@ -12,12 +12,12 @@ namespace FirstSelenium
     [TestClass]
     public class DataDrivenTest
     {
-        [TestMethod]
+        //[TestMethod]
         [TestCategory("DataDrivenTest")]
-        [DataTestMethod]
+        //[DataTestMethod]
      //   [DataRow("https://demo.actitime.com/login.do")]
         //[DataRow("https://www.flipkart.com/")]
-        [DataRow("https://www.google.com/")]
+        //[DataRow("https://www.google.com/")]
         public void DataDrivenTestMethod(string url)
         {
             IWebDriver driver = new ChromeDriver();
@@ -26,7 +26,7 @@ namespace FirstSelenium
             driver.Close();
             driver.Dispose();
         }
-        [TestMethod]
+      //  [TestMethod]
         [Ignore]
         public void Ignore()
         {

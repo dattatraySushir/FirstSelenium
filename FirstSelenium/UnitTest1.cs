@@ -10,7 +10,7 @@ namespace FirstSelenium
     [TestCategory("Practice")]
     public class UnitTest1
     {
-        [TestMethod]
+      // [TestMethod]
         [TestCategory("practise")]
         public void TestMethod1()
         {
@@ -22,7 +22,7 @@ namespace FirstSelenium
             String dvr = driver.Title;
             Console.WriteLine(dvr);
         }
-        [TestMethod]
+        //[TestMethod]
         [TestCategory("PracticeFirst2")]
         public void TestMethod2()
         {

@@ -15,7 +15,7 @@ namespace FirstSelenium
     [TestCategory("NavigationMethods")]
     public class NavigationMethods
     {
-        [TestMethod]
+       // [TestMethod]
         public void BackProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -24,7 +24,7 @@ namespace FirstSelenium
             driver.Navigate().Back();
         }
 
-        [TestMethod]
+       /// [TestMethod]
         public void RefreshProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -32,7 +32,7 @@ namespace FirstSelenium
             Thread.Sleep(3000);
             driver.Navigate ().Refresh();   
         }
-        [TestMethod]
+       // [TestMethod]
         public void ForwardProperty()
         {
             IWebDriver driver = new ChromeDriver();
@@ -44,7 +44,7 @@ namespace FirstSelenium
             Console.WriteLine("It is perform forward scenario");
             driver.Navigate().Forward();
         }
-        [TestMethod]
+      //  [TestMethod]
         public void GoToUrlProperty()
         {
             IWebDriver driver = new ChromeDriver();

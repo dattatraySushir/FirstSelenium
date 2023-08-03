@@ -10,6 +10,7 @@ namespace FirstSelenium.TestScripts.Today
 {
     [TestClass]
     [TestCategory("Regression")]
+ 
     public class PriorityyClasses
     {
         [TestMethod]
@@ -27,7 +28,7 @@ namespace FirstSelenium.TestScripts.Today
             Thread.Sleep(3000);
         }
         [TestMethod]
-        [Priority(1)]
+        [TestCategory("Methods"), Priority(1)]
         public void M3()
         { 
             Console.WriteLine("The third method is executed");

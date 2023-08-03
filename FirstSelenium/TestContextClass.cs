@@ -25,6 +25,7 @@ namespace FirstSelenium
         public static void Method(TestContext _testContext)
         {
             testContext = _testContext;
+           // Console.WriteLine(testContext.TestName);
         }
         [AssemblyCleanup]
         public static void Method2()
@@ -32,7 +33,13 @@ namespace FirstSelenium
             
         }
         [TestMethod]
-        [TestCategory("Test Context"), Priority(0)]
+        [TestCategory("Test Context")]
+        public void Datta()
+        {
+            Console.WriteLine("name of Datta");
+        }
+        [TestMethod]
+        [TestCategory("Test Context")]
         
         public void Test()
         {
@@ -46,6 +53,16 @@ namespace FirstSelenium
             }
             TestContext.WriteLine(TestContext.TestName+" ");
             TestContext.WriteLine(TestContext.Properties["Browser"].ToString());
+        }
+        [TestInitialize] 
+        public void TestInitialize()
+        {
+            Console.WriteLine(testContext.TestName);
+        }
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            Console.WriteLine(TestContext.TestName);
         }
     }
 }

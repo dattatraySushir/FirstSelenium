@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
 	<MSTest>
+		<!--- Here we are doing the parallel execution-->
 		<Parallelize>
-			<Workers>5</Workers>
+			<Workers>2</Workers>
 			<Scope>MethodLevel</Scope>
 		</Parallelize>
 	</MSTest>

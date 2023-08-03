@@ -49,7 +49,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">8/3/2023 3:07:45 PM</span>
+                    <span class="badge badge-primary">8/3/2023 3:52:08 PM</span>
                 </a>
             </li>
         </ul>
@@ -104,7 +104,7 @@
 						<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+												<a status="fatal" class="dropdown-item" href="#"><span>Fatal</span><span class="status danger pull-right"></span></a>																								<div class="dropdown-divider"></div>
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
 				</li>
@@ -112,25 +112,25 @@
         </div>
         <div class="test-list-wrapper scrollable">
             <ul class="test-list-item">
-					<li class="test-item" status="fail" author="" device="" tag="" test-id="1"> 
-						<div class="status-avatar fail-bg">
+					<li class="test-item" status="fatal" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar fatal-bg">
 							<i class="fa fa-times text-white"></i>
 						</div>
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Datta</p> 
-								<p class="duration text-sm">0h:0m:0s+045ms</p> 
-								<span class="datetime">15:07:45 PM</span>
+								<p class="duration text-sm">0h:0m:0s+023ms</p> 
+								<span class="datetime">15:52:09 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
 							<div class="detail-head">
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
-										<h5 class="test-status text-fail">Datta</h5>
-										<span class='badge badge-success'>8/3/2023 3:07:45 PM</span>
-										<span class='badge badge-danger'>8/3/2023 3:07:45 PM</span>
-										<span class='badge badge-default'>0h:0m:0s+045ms</span>
+										<h5 class="test-status text-fatal">Datta</h5>
+										<span class='badge badge-success'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-danger'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-default'>0h:0m:0s+023ms</span>
 									</div>
 																	</div>
 							</div>
@@ -145,21 +145,234 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>15:07:45</td>
+				<td>15:52:09</td>
 				<td>
 The report is being generated and status is updated									</td>
 			</tr>
 			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>15:52:09</td>
+				<td>
+This is the warning symbol									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fatal"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is fatal									</td>
+			</tr>
+			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>15:07:45</td>
+				<td>15:52:09</td>
 				<td>
 The test case is pass									</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>15:07:45</td>
+				<td>15:52:09</td>
 				<td>
 The test case is fail									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fatal" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar fatal-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Tejas</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">15:52:09 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fatal">Tejas</h5>
+										<span class='badge badge-success'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-danger'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>15:52:09</td>
+				<td>
+The report is being generated and status is updated									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>15:52:09</td>
+				<td>
+This is the warning symbol for tejas									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fatal"></i></td>
+				<td>15:52:09</td>
+				<td>
+Tejas test case is fatal									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is pass tejas									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is fail of tejas									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fatal" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar fatal-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Veena</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">15:52:09 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fatal">Veena</h5>
+										<span class='badge badge-success'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-danger'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>15:52:09</td>
+				<td>
+The report is being generated and status is updated									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>15:52:09</td>
+				<td>
+This is the warning symbol for veena									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fatal"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is fatal for veena									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is pass for veena									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is fail for veena									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fatal" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar fatal-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Sushma</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">15:52:09 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fatal">Sushma</h5>
+										<span class='badge badge-success'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-danger'>8/3/2023 3:52:09 PM</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>15:52:09</td>
+				<td>
+The report is being generated and status is updated									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>15:52:09</td>
+				<td>
+This is the warning symbol for sushma									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fatal"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is fatal sushma									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is pass sushma									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>15:52:09</td>
+				<td>
+The test case is fail sushma									</td>
 			</tr>
 	</tbody>
 </table>
@@ -202,7 +415,7 @@ The test case is fail									</td>
 	                    <b>0</b> tests passed
                     </small></div>
 	                <div>
-	                    <small data-tooltip='100%'><b>1</b> tests failed, 
+	                    <small data-tooltip='100%'><b>4</b> tests failed, 
 	                    <b data-tooltip='0%'>0</b> others
 	                    </small>
                     </div>
@@ -217,7 +430,7 @@ The test case is fail									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light">1</h2>
+							<h2 class="font-size-28 font-weight-light">4</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
 								<span>0%</span>
@@ -236,7 +449,7 @@ The test case is fail									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Start</h6>
-							<h6 class="font-weight-light">8/3/2023 3:07:45 PM</h6>
+							<h6 class="font-weight-light">8/3/2023 3:52:08 PM</h6>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -252,7 +465,7 @@ The test case is fail									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Duration</h6>
-							<h6 class="font-weight-light">00:00:00.6636136</h6>
+							<h6 class="font-weight-light">00:00:00.3780218</h6>
 							<span class="text-semibold text-danger font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -268,7 +481,7 @@ The test case is fail									</td>
 	                <div class="media justify-content-between">
 						<div>
 							<p class="">Duration</p>
-							<h6 class="font-weight-light">00:00:10.7217164</h6>
+							<h6 class="font-weight-light">00:00:09.8544112</h6>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -311,14 +524,14 @@ The test case is fail									</td>
 </div>
 <script>
 	var statusGroup = {
-    parentCount: 1,
+    parentCount: 4,
 		passParent: 0,
-		failParent: 1,
-		fatalParent: 0,
+		failParent: 0,
+		fatalParent: 4,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 1,
+		exceptionsParent: 4,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,

@@ -455,6 +455,7 @@
     <Compile Include="Attributes\PrioritiesClass.cs" />
     <Compile Include="Attributes\TimeoutAttribute.cs" />
     <Compile Include="BaseClassTIandTC.cs" />
+    <Compile Include="DataBaseConnection.cs" />
     <Compile Include="ExtentReportsData.cs" />
     <Compile Include="TakeScreenShot.cs" />
     <Compile Include="TestContextClass.cs" />

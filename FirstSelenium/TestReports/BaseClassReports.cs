@@ -32,7 +32,7 @@ namespace FirstSelenium.TestReports
             extentHtmlReporter = new ExtentHtmlReporter(path);
             extentReports.AddSystemInfo("Windows OS", "Windows 11");
             extentReports.AttachReporter(extentHtmlReporter);
-            extentTest = extentReports.CreateTest("datta");
+          
             MessageBox.Show("Assembly cleanup started");
         }
         [AssemblyCleanup]

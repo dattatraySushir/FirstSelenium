@@ -455,9 +455,11 @@
     <Compile Include="Attributes\PrioritiesClass.cs" />
     <Compile Include="Attributes\TimeoutAttribute.cs" />
     <Compile Include="BaseClassTIandTC.cs" />
+    <Compile Include="ConnectionToDB1.cs" />
     <Compile Include="DataBaseConnection.cs" />
     <Compile Include="ExtentReportsData.cs" />
     <Compile Include="Program\03Aug2023.cs" />
+    <Compile Include="ScreenSHotReports.cs" />
     <Compile Include="TakeScreenShot.cs" />
     <Compile Include="TestContextClass.cs" />
     <Compile Include="DataDrivenTest.cs" />

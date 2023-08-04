@@ -22,7 +22,7 @@ namespace FirstSelenium
             OdbcConnection connection = new OdbcConnection(connectionstring);
             string query = "select * from project";
             connection.Open();
-            OdbcCommand command = new OdbcCommand(query, connection);   
+            OdbcCommand command = new OdbcCommand(query, connection);
             var tables=command.ExecuteReader();
             Console.WriteLine(tables);
             while(tables.Read())

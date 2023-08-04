@@ -32,8 +32,7 @@ namespace FirstSelenium.TestReports
             extentHtmlReporter = new ExtentHtmlReporter(path);
             extentReports.AddSystemInfo("Windows OS", "Windows 11");
             extentReports.AttachReporter(extentHtmlReporter);
-          
-            MessageBox.Show("Assembly cleanup started");
+            MessageBox.Show("Assembly Initialise started");
         }
         [AssemblyCleanup]
         public static void AssemblyCleanup()

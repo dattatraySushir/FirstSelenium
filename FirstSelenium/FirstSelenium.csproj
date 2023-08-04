@@ -457,6 +457,7 @@
     <Compile Include="BaseClassTIandTC.cs" />
     <Compile Include="DataBaseConnection.cs" />
     <Compile Include="ExtentReportsData.cs" />
+    <Compile Include="Program\03Aug2023.cs" />
     <Compile Include="TakeScreenShot.cs" />
     <Compile Include="TestContextClass.cs" />
     <Compile Include="DataDrivenTest.cs" />
@@ -476,6 +477,9 @@
       <DependentUpon>Settings1.runsettings</DependentUpon>
     </Compile>
     <Compile Include="TestClass1.cs" />
+    <Compile Include="TestReports\BaseClassReports.cs" />
+    <Compile Include="TestReports\TestingReports.cs" />
+    <Compile Include="TestReports\TEstInitialiSe.cs" />
     <Compile Include="TestScripts\FetchDataFromExcel.cs" />
     <Compile Include="TestScripts\LoginTest.cs" />
     <Compile Include="TestScripts\TaskPage.cs" />
@@ -508,6 +512,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reports\" />
+    <Folder Include="TestReports\Reports\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

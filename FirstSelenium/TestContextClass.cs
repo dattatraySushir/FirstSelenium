@@ -21,13 +21,13 @@ namespace FirstSelenium
             set { testContext = value; }
 
         }
-        [AssemblyInitialize]
+       // [AssemblyInitialize]
         public static void Method(TestContext _testContext)
         {
             testContext = _testContext;
            // Console.WriteLine(testContext.TestName);
         }
-        [AssemblyCleanup]
+      //  [AssemblyCleanup]
         public static void Method2()
         {
             

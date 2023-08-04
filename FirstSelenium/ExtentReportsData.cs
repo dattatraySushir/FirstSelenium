@@ -39,10 +39,14 @@ namespace FirstSelenium
             extentTest1.Fail("The test case is fail of tejas");
 
             ExtentTest extentTest2 = extentReports.CreateTest("Veena");
+
             extentTest2.Log(Status.Info, "The report is being generated and status is updated");
-            extentTest2.Log(Status.Warning, "This is the warning symbol for veena");
+            extentTest2.Log(Status.Warning, "This is the warning symbol");
+
             extentTest2.Log(Status.Fatal, "The test case is fatal for veena");
+
             extentTest2.Pass("The test case is pass for veena");
+
             extentTest2.Fail("The test case is fail for veena");
 
             ExtentTest extentTest3 = extentReports.CreateTest("Sushma");

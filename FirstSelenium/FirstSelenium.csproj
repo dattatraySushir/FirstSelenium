@@ -458,7 +458,10 @@
     <Compile Include="ConnectionToDB1.cs" />
     <Compile Include="DataBaseConnection.cs" />
     <Compile Include="ExtentReportsData.cs" />
+    <Compile Include="FetchingDataFromCSV.cs" />
     <Compile Include="Program\03Aug2023.cs" />
+    <Compile Include="Program\Class1.cs" />
+    <Compile Include="RetryAnalyzer.cs" />
     <Compile Include="ScreenSHotReports.cs" />
     <Compile Include="TakeScreenShot.cs" />
     <Compile Include="TestContextClass.cs" />
@@ -494,6 +497,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="DataStored.csv" />
     <None Include="ItSettings.Designer.runsettings" />
     <None Include="packages.config" />
     <None Include="Resources\TestData.xlsx" />
@@ -513,7 +517,9 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Backup\" />
     <Folder Include="Reports\" />
+    <Folder Include="ScreenShots\" />
     <Folder Include="TestReports\Reports\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

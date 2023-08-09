@@ -1,0 +1,5 @@
+﻿Username, Password, Status
+admin, 123, true
+user, admin, false
+manager, trainee, false
+trainee, password, true
